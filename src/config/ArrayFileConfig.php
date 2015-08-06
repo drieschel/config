@@ -1,5 +1,5 @@
 <?php
-namespace drieschel\config\config;
+namespace drieschel\config;
 
 use drieschel\config\ArrayConfig;
 /**

@@ -1,5 +1,5 @@
 <?php
-namespace drieschel\config\config;
+namespace drieschel\config;
 
 /**
  * Fasst mehrere Configs zu einer zusammen.
