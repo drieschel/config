@@ -1,10 +1,6 @@
 <?php
 namespace drieschel\config;
-
-use drieschel\config\ArrayConfig;
 /**
- * Description of ArrayFile
- *
  * @author Immanuel Klinkenberg <klinkenberg@speicher-werk.de>
  */
 class ArrayFileConfig extends ArrayConfig

@@ -1,6 +1,5 @@
 <?php
 namespace drieschel\config;
-
 /**
  * Fasst mehrere Configs zu einer zusammen.
  * @author Sebastian Rüsche <sebastian.ruesche@gmx.de>
@@ -10,8 +9,7 @@ class MultiConfig implements Config
   /**
    * @var Config[]
    */
-  private $configs;
-  
+  private $configs;  
   
   public function __construct(array $configs = array())
   {

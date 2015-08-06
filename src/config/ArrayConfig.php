@@ -1,8 +1,6 @@
 <?php
 namespace drieschel\config;
 /**
- * Description of Array
- *
  * @author Immanuel Klinkenberg <klinkenberg@speicher-werk.de>
  */
 class ArrayConfig implements Config
