@@ -6,16 +6,24 @@ namespace drieschel\config;
 class ArrayConfig implements Config
 {
   /**
-   *
    * @var array
    */
   protected $config = array();
   
+  /**
+   * @param array $config
+   */
   public function __construct(array $config)
   {
     $this->config = $config;
   }
   
+  /**
+   * 
+   * @param string $name
+   * @param mixed $default
+   * @return mixed
+   */
   public function get($name, $default = null)
   {
     $config = &$this->config;
@@ -33,6 +41,10 @@ class ArrayConfig implements Config
     return $config;
   }
   
+  /**
+   * @param string $name
+   * @return boolean
+   */
   public function contains($name)
   {
     $config = &$this->config;
@@ -48,5 +60,13 @@ class ArrayConfig implements Config
       }
     }
     return true;
+  }
+  
+  /**
+   * @return mixed[]
+   */
+  public function toArray()
+  {
+    return $this->config;
   }
 }
