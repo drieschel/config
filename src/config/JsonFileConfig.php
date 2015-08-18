@@ -22,7 +22,7 @@ class JsonFileConfig extends ArrayConfig
     }
     
     $this->configFile = $configFile;    
-    $configArray = json_decode(file_get_contents($configFile));    
+    $configArray = json_decode(file_get_contents($configFile), true);
     if(!is_array($configArray))
     {
       throw new \Exception('Wrong format given!');
